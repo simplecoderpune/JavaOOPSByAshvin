@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package MethodOverriding2;
+
+/**
+ *
+ * @author DELL-PC
+ */
+class A
+{
+    void m1()
+    {
+        System.out.println("m1 of A");
+    }
+}
+class B extends A
+{
+    void m1()
+    {
+        System.out.println("m1 of B");
+    }
+}
+class C extends B
+{
+    
+}
+public class Test {
+    public static void main(String args[])
+    {
+        A c=new C();
+        c.m1();
+        
+//        so first of all  it will check in the current class if not available then goes to immediate parent if not present then it goes to parent
+    }
+}
